@@ -22,7 +22,7 @@ public class OrlandoHealthTest extends Base {
 
 
     OrlandoHealthLoginPage orlandoHealthLoginPage = new OrlandoHealthLoginPage(driver);
-    private static  Logger oLog = LogManager.getLogger(OrlandoHealthTest.class.getName());
+   // private static  Logger oLog = LogManager.getLogger(OrlandoHealthTest.class.getName());
 
 
 
@@ -144,7 +144,7 @@ Thread.sleep(2000);
                 driver.switchTo().window(child);
                 Thread.sleep(5000);
                 driver.findElement(By.xpath("/html/body/div[3]/div/div/div/h3/a")).click();
-                oLog.error("this line 144 fail");
+                //oLog.error("this line 144 fail");
 
 
 
@@ -158,7 +158,7 @@ Thread.sleep(2000);
         @Test
         public void bestRegionalHospital(){
             System.out.println("kdjkjfkdddddddddddddddddddddddddddddddddddddddddddd");
-         oLog.error("8888888888888888888888888888888");
+        // oLog.error("8888888888888888888888888888888");
             JavascriptExecutor js=(JavascriptExecutor)driver;
             js.executeScript("arguments[0].click;",driver.findElement(By.xpath("/html/body/header/div[3]/div[3]/a[2]")));
         }
